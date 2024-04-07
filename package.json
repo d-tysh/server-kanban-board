@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
+    "@octokit/rest": "^20.1.0",
+    "cors": "^2.8.5",
     "debug": "4.1.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.2"
