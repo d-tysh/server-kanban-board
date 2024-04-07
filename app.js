@@ -6,7 +6,7 @@ const cors = require('cors');
 const { Octokit } = require('@octokit/rest');
 
 const octokit = new Octokit({
-    auth: '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'
+    auth: process.env.GITHUB_TOKEN
 })
 
 app.use(cors());
