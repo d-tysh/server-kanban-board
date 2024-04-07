@@ -13,8 +13,6 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use('/abc', movies);
-
 
 app.get('/', (req,res) => {
     res.send('Welcome to Daily Code Buffer in Heroku Auto Deployment!!');
