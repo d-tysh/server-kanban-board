@@ -1,7 +1,5 @@
 const express = require('express');
 const app = express();
-const Joi = require('@hapi/joi');
-const movies = require('./movies');
 const cors = require('cors');
 const { Octokit } = require('@octokit/rest');
 
@@ -61,4 +59,3 @@ app.get('/repos/:owner/:repo', async (req, res) => {
 
 const port = process.env.PORT || '5000';
 app.listen(port, () => console.log(`Server started on Port ${port}`));
-// test
