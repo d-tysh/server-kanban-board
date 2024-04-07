@@ -3,8 +3,10 @@ const app = express();
 const cors = require('cors');
 const { Octokit } = require('@octokit/rest');
 
+const secretToken = process.env.MY_SECRET_TOKEN;
+
 const octokit = new Octokit({
-    auth: process.env.GITHUB_TOKEN
+    auth: secretToken
 })
 
 app.use(cors());
